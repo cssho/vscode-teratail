@@ -13,8 +13,6 @@ teratail Client for Visual Studio Code
 
 ```json
 {
-	~~~
-	
 	// teratailで発行されるアクセストークン (https://teratail.com/users/setting/tokens)
 	"teratail.accesstoken": "xxxxxxxxxxxxxxxxxxxxxx",
 
