@@ -1,0 +1,62 @@
+{
+	"name": "vscode-teratail",
+	"displayName": "teratail Client",
+	"description": "teratail in VS Code",
+	"version": "0.0.1",
+	"publisher": "cssho",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "teratail.display",
+				"title": "teratail: Display Questions"
+			},
+			{
+				"command": "teratail.refresh",
+				"title": "teratail: Refresh Questions"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "VSCode teratail configuration",
+			"properties": {
+				"teratail.accesstoken": {
+					"type": "string",
+					"default": "",
+					"description": "teratailで発行されるアクセストークン (https://teratail.com/users/setting/tokens)"
+				},
+				"teratail.getQuestionsCount": {
+					"type": "number",
+					"default": 20,
+					"description": "取得するteratailの質問数"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	},
+	"dependencies": {
+		"teratail": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cssho/vscode-teratail"
+	},
+	"license": "MIT",
+	"icon": "logo.png"
+}
