@@ -2,6 +2,9 @@
 teratail Client for Visual Studio Code
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items/cssho.vscode-teratail)
 
+![](http://vsmarketplacebadge.apphb.com/version/cssho.vscode-teratail.svg)
+![](http://vsmarketplacebadge.apphb.com/installs/cssho.vscode-teratail.svg)
+
 ## Usage 
 0. コマンドパレットを表示し、入力欄に"ext install"と入力してEnter
 0. "teratail Client"を選択し、インストール
